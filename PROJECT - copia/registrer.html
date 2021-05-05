@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title> The Fashion Pet</title>
+</head>
+<body>
+    <header>
+    <h1 class="display-1"> The Fashion pet </h1>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link"  href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="register.html" > Register</a>
+        </li>
+      </ul>
+      
+    </header> 
+    <main class="container">
+      <h2> Registrer </h2>    
+    <p>
+      <label for="name" class="form-label">Name:*</label>
+      <input type="text"  class="form-control" name="name" id="petName">
+  </p>
+  <p>
+      <label for="age">Age:*</label>
+      <input type="number"  class="form-control" name="age" id="petAge">
+  </p>
+  <p>
+      <label for="gender">Gender:*</label>
+      <input type="text"  class="form-control" name="gender" id="petGender">
+  </p>
+
+  <p>
+    <label for="type">Type:</label>
+    <select name="type"  class="form-control" id="petType">
+        <option value="dog"> 🐕‍🦺 Dog</option>
+        <option value="cat"> 🐈 Cat</option>
+        <option value="bird"> 🦅   Bird</option>
+        <option value="other"> 🐹  Other </option>
+    </select>
+  </p>
+  <p>
+      <label for="breed">Breed:*</label>
+      <input type="text"  class="form-control" name="breed" id="petBreed">
+  </p>
+  <p>
+      <label for="service">Service:*</label>
+      <select name="service"  class="form-control" id="petService">
+          <option value="shower">Shower</option>
+          <option value="nails">Nails Cut</option>
+          <option value="hair"> Hair Cut</option>
+          <option value="full">Full Service</option>
+      </select>
+      
+  </p>
+<p>
+      <label for="owner">Owner's Name:* </label>
+      <input type="text" name="owner"  class="form-control" id="ownerName">
+  </p>
+  <p>
+      <label for="phone">Phone:* </label>
+      <input type="text"  class="form-control" name="phone" id="ownerPhone">
+  </p>
+  <button class="btn btn-primary" onclick="registrer();">Register</button>
+</main>
+<section class="container">
+<div>
+  <p id="profits"></p>
+</div>
+<div>
+  <input type="search" name="search" id="searchPet" class="form-control">
+  <button onclick="searchPet();" class="btn btn-warning">search</button>
+</div>
+<div id="pets">
+  <!--here are the pets -->
+
+</div>
+     <!--Create a table -->
+     <table>
+      <thead>
+        <tr>
+          <th>Name </th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Type</th>
+          <th>Breed</th>
+          <th>Service</th>
+          <th>Price</th>
+          <th>Owner Name</th>
+          <th>Contact Phone </th>
+        </tr>
+      </thead>
+      <tbody id="petTable">
+
+      </tbody>
+    </table>
+    </section>
+       <footer id="footer-info">
+ 
+       </footer > 
+
+       <script src="js/jquery-1.12.0.min.js"></script>
+      <script src="js/register.js"></script>
+      <script src="js/directory.js"></script>
+</body>
+</html>
+
